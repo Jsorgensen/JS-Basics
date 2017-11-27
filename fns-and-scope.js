@@ -27,7 +27,7 @@ function getName(){
 
   //Code Here
 function welcome(){
-  alert("Welcome " + getName());
+  alert("Welcome, " + getName());
 }
 
 //////////////////PROBLEM 4////////////////////
@@ -48,8 +48,8 @@ function welcome(){
 
 
   //Answer Here
-
-
+var falsyValues = [false, null, undefined, 0, '', NaN];
+"To check if something is falsy assign it to a boolean from an if statement.  ie: var boolean = if(false)true else false;";
 
 //////////////////PROBLEM 6////////////////////
 
@@ -58,15 +58,18 @@ function welcome(){
 //Create a function called myName that returns your name
 
   //Code Here
-  
+function myName(){
+  return "Mike Jorgensen";
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+var newMyName = myName;
 
 //Now alert the result of invoking newMyName
-
+alert(newMyName());
 
 
 //////////////////PROBLEM 7////////////////////
@@ -76,7 +79,9 @@ function welcome(){
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+function outerFn(){
+  return myName();
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
