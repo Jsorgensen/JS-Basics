@@ -26,7 +26,9 @@ function getName(){
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+function welcome(){
+  alert("Welcome " + getName());
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -36,7 +38,7 @@ function getName(){
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+"arguments are what is passed into a function/method, parameters are the references inside the actual function/method.";
 
 //////////////////PROBLEM 5////////////////////
 
